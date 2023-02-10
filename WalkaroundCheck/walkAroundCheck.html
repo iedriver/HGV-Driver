@@ -15,7 +15,7 @@
   <section>
     <details>
       <summary id="text">Tachograph</summary>
-      <P>Date &amp; Time</P>
+      <P>Time setting</P>
       <div>
         <picture>
           <source srcset="./Images/truckSmall.jpg" media="(min-width: 500px) and (max-width:700px) " />
@@ -153,14 +153,15 @@
   <section></section>
   <script>
     function myFunction() {
-      var checkBox = document.getElementById("myCheck1");
-      var checkBox = document.getElementById("myCheck2");
-      var checkBox = document.getElementById("myCheck3");
+      var checkBox1 = document.getElementById("myCheck1");
+      var checkBox2 = document.getElementById("myCheck2");
+      var checkBox3 = document.getElementById("myCheck3");
       var text = document.getElementById("text");
-      if (checkBox.checked == true) {
-        text.style.backgroundColor = "rgb(9, 240, 125)";
-      } else {
-        text.style.backgroundColor = "yellow";
+      if (checkBox1.checked == true && checkBox2.checked && checkBox3.checked) {
+        text.style.backgroundColor ="#0be60b";
+      } 
+      else {
+        text.style.backgroundColor ="yellow";
       }
     }
   </script>
