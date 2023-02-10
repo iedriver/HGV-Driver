@@ -14,13 +14,33 @@
   <h1>Walkaround check HGV</h1>
   <section>
     <details>
-      <summary>Tachograph </summary>
+      <summary id="text">Tachograph</summary>
       <P>Date &amp; Time</P>
-      <div><img src="./Images/TachographArrowTime.jpg" alt=""></div>
+      <div>
+        <picture>
+          <source srcset="./Images/truckSmall.jpg" media="(min-width: 500px) and (max-width:700px) " />
+          <source srcset="./Images/TachographArrowCard.jpg" media="(min-width: 900px)" />
+          <img src="./Images/TachographArrowTime.jpg" alt="MDN" />
+        </picture>
+      </div>
+      <a href="../WalkaroundCheck/Fault/fault.html">FAULT !!!</a>
+      <label for="myCheck1">READY</label>
+
+      <input type="checkbox" id="myCheck1" onclick="myFunction()">
+
+
+
+      <!-- <div><img src="./Images/TachographArrowTime.jpg" alt=""></div> -->
       <p>Printer Roll</p>
       <div><img src="./Images/TachographArrowPaper.jpg" alt=""></div>
+      <label for="myCheck2">READY</label>
+
+      <input type="checkbox" id="myCheck2" onclick="myFunction()">
       <p>Driver Card</p>
       <div><img src="./Images/TachographArrowCard.jpg" alt=""></div>
+      <label for="myCheck3">READY</label>
+
+      <input type="checkbox" id="myCheck3" onclick="myFunction()">
     </details>
     <details>
       <summary>Engine ON</summary>
@@ -131,7 +151,19 @@
     </details>
   </section>
   <section></section>
-
+  <script>
+    function myFunction() {
+      var checkBox = document.getElementById("myCheck1");
+      var checkBox = document.getElementById("myCheck2");
+      var checkBox = document.getElementById("myCheck3");
+      var text = document.getElementById("text");
+      if (checkBox.checked == true) {
+        text.style.backgroundColor = "rgb(9, 240, 125)";
+      } else {
+        text.style.backgroundColor = "yellow";
+      }
+    }
+  </script>
 </body>
 
 </html>
