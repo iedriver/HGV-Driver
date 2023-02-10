@@ -16,6 +16,7 @@ details > summary {
   border: none;
   box-shadow: 3px 3px 4px #000000;
   cursor: pointer;
+  height: 7vh;
 }
 
 details > p {

@@ -20,7 +20,9 @@
         <picture>
           <source srcset="./Images/truckSmall.jpg" media="(min-width: 500px) and (max-width:700px) " />
           <source srcset="./Images/TachographArrowCard.jpg" media="(min-width: 900px)" />
+          <source width="500px" srcset="./Images/dupcia.jpg" media="(orientation: portrait) and (min-width:800px)>
           <img src="./Images/TachographArrowTime.jpg" alt="MDN" />
+
         </picture>
       </div>
       <a href="../WalkaroundCheck/Fault/fault.html">FAULT !!!</a>
@@ -158,10 +160,9 @@
       var checkBox3 = document.getElementById("myCheck3");
       var text = document.getElementById("text");
       if (checkBox1.checked == true && checkBox2.checked && checkBox3.checked) {
-        text.style.backgroundColor ="#0be60b";
-      } 
-      else {
-        text.style.backgroundColor ="yellow";
+        text.style.backgroundColor = "#0be60b";
+      } else {
+        text.style.backgroundColor = "yellow";
       }
     }
   </script>
